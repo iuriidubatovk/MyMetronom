@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPageDialogRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="280dip"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <EditText
+        android:id="@+id/editTextPageNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewMaxPages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="CANCEL"
+            android:textColor="#00f7ff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="OK"
+            android:textColor="#00f7ff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

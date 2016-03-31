@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#47dce9ed"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="MANUAL MODE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_margin="10dp"
+            android:background="#1baee4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:orientation="vertical">
+
+               <ToggleButton
+                   android:id="@+id/vibration_btn"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/selector_vibration"
+                   android:paddingTop="10dp"
+                   android:textOff=""
+                   android:textOn=""/>
+
+                <TextView
+                    android:id="@+id/textView222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/vibration"
+                    android:textColor="#ffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ToggleButton
+                    android:id="@+id/flash__btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_flash"
+                    android:paddingTop="25dp"
+                    android:textOff=""
+                    android:textOn=""/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/flash"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ToggleButton
+                    android:id="@+id/sound_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_volume"
+                    android:paddingTop="25dp"
+                    android:textOff=""
+                    android:textOn=""/>
+
+                <TextView
+                    android:id="@+id/textView2223"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/sound"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/set_bpm_you_need_below" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/enter_number"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:gravity="center_horizontal"
+                android:text="@string/text_100"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/bpm"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:max="190"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_line"
+            android:thumb="@drawable/is_thumb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/indicator"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_oval_green" />
+
+        <ToggleButton
+            android:id="@+id/start"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_selector"
+            android:checked="true"
+            android:textColor="#fcfdfd"
+            android:textOff="STOP"
+            android:textOn="START"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
